@@ -8,7 +8,7 @@ import { LuLayers, LuLanguages, LuCpu } from "react-icons/lu";
 import { TbLink } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { RiTelegram2Line } from "react-icons/ri";
+import { BiLogoDevTo } from "react-icons/bi";
 import { BiMessageDetail, BiLoaderAlt } from "react-icons/bi";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -167,16 +167,16 @@ const Landing = () => {
         </a>
 
         <a
-          href="https://t.me/iamabdurahmon"
+          href="https://dev.to/rakhimov"
           className="card"
           target="_blank"
           rel="noreferrer"
         >
           <span>
-            <RiTelegram2Line />
+            <BiLogoDevTo />
           </span>
           <div className="card-desc">
-            <h1>Telegram Blog</h1>
+            <h1>Dev.to Articles</h1>
             <p>Coding and beyond</p>
           </div>
         </a>
