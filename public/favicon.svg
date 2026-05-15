@@ -1,19 +1,18 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    path { fill: #141414; }
+    path {
+      fill: #242424;
+    }
     @media (prefers-color-scheme: dark) {
-      path { fill: #f3f3f3; }
+      path {
+        fill: #EDEDED;
+      }
     }
   </style>
-  <mask id="mask0_72_102" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="13" y="13" width="155" height="155">
-    <path d="M168 13H13V168H168V13Z" fill="white"/>
-  </mask>
-  <g mask="url(#mask0_72_102)">
-    <path d="M116.669 46.7822H168V80.5643H116.669V46.7822Z"/>
-    <path d="M13 80.5645H116.669V114.347H13V80.5645Z"/>
-    <path d="M13 13H116.669V46.7821H13V13Z"/>
-    <path d="M116.669 114.347H168V168H116.669V114.347Z"/>
-    <path d="M13 114.347H64.3312V168H13V114.347Z"/>
-    <path d="M13 46.7822H64.3312V80.5643H13V46.7822Z"/>
-  </g>
+  <path d="M126.669 56.7822H178V90.5643H126.669V56.7822Z"/>
+  <path d="M23 90.5645H126.669V124.347H23V90.5645Z"/>
+  <path d="M23 23H126.669V56.7821H23V23Z"/>
+  <path d="M126.669 124.347H178V178H126.669V124.347Z"/>
+  <path d="M23 124.347H74.3312V178H23V124.347Z"/>
+  <path d="M23 56.7822H74.3312V90.5643H23V56.7822Z"/>
 </svg>
