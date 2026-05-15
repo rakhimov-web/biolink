@@ -4,7 +4,7 @@ import axios from "axios";
 import "./landing.css";
 import logo from "../../assets/logo.svg";
 import blogImg from "../../assets/blog.webp";
-import { LuLayers, LuLanguages, LuCpu } from "react-icons/lu";
+import { LuLayers, LuCodeXml, LuUsersRound } from "react-icons/lu";
 import { TbLink } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
@@ -101,16 +101,16 @@ const Landing = () => {
 
       <div className="achievements">
         <div className="achiev-block">
+          <LuCodeXml />
+          <span>6+ Tech</span>
+        </div>
+        <div className="achiev-block">
           <LuLayers />
           <span>10+ Projects</span>
         </div>
         <div className="achiev-block">
-          <LuLanguages />
-          <span>IELTS 6.0+</span>
-        </div>
-        <div className="achiev-block">
-          <LuCpu />
-          <span>Frontend</span>
+          <LuUsersRound />
+          <span>6+ Clients</span>
         </div>
       </div>
 
