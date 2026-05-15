@@ -190,8 +190,8 @@
   position: absolute;
   top: 0.2rem;
   right: 0.2rem;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background-color: var(--ping-dot);
   border-radius: 50%;
   border: 1.5px solid transparent;
