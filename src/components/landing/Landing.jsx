@@ -91,7 +91,7 @@ const Landing = () => {
 
       {/* card links */}
       <div className="card-links">
-        <a href="https://portfolio.rakhim0v.uz/" className="card">
+        <a href="https://portfolio.rakhim0v.uz/" className="card" target="_blank">
           <span className="active">
             <div className="dot"></div>
             <TbLink />
@@ -170,7 +170,10 @@ const Landing = () => {
       {/* footer */}
       <footer>
         <p>
-          Link In Bio • Made by <a href="https://portfolio.rakhim0v.uz/">Rakhimov</a>
+          Link In Bio • Made by{" "}
+          <a href="https://portfolio.rakhim0v.uz/" target="_blank">
+            Rakhimov
+          </a>
         </p>
       </footer>
     </motion.div>
