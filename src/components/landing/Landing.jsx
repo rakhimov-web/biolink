@@ -13,23 +13,43 @@ import { BiMessageDetail, BiLoaderAlt } from "react-icons/bi";
 import { IoLocationOutline } from "react-icons/io5";
 
 const Landing = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [status, setStatus] = useState("idle");
 
-  const TOKEN = "8979222163:AAF98YVp1-RHx-XRPD2E5ehYDWnFRVIhBV0";
-  const CHAT_ID = "5379497693";
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("loading");
 
-    const text = `📬 New Message\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n📝 Message: ${formData.message}`;
+    const text =
+      `📬 <b>BIOLINK | NEW INQUIRY</b>\n\n` +
+      `<blockquote>` +
+      `<b>Name:</b> ${formData.name}\n` +
+      `<b>Email:</b> <code>${formData.email}</code>\n\n` +
+      `<b>Message:</b> ${formData.message}` +
+      `</blockquote>\n\n` +
+      `⏱ <u>${new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} • Automated Notification</u>`;
+
+    const TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+    const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
     try {
-      const response = await axios.post(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
-        chat_id: CHAT_ID,
-        text: text,
-      });
+      const response = await axios.post(
+        `https://api.telegram.org/bot${TOKEN}/sendMessage`,
+        {
+          chat_id: CHAT_ID,
+          text: text,
+          parse_mode: "HTML",
+        },
+      );
 
       if (response.status === 200) {
         setTimeout(() => {
@@ -54,7 +74,12 @@ const Landing = () => {
   };
 
   return (
-    <motion.div className="wrapper" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}>
+    <motion.div
+      className="wrapper"
+      initial={{ opacity: 0, scale: 0.98 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+    >
       {/* profile */}
       <div className="top-pic">
         <img src={logo} alt="logo" />
@@ -91,7 +116,12 @@ const Landing = () => {
 
       {/* card links */}
       <div className="card-links">
-        <a href="https://portfolio.rakhim0v.uz/" className="card" target="_blank">
+        <a
+          href="https://portfolio.rakhim0v.uz/"
+          className="card"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span className="active">
             <div className="dot"></div>
             <TbLink />
@@ -112,7 +142,12 @@ const Landing = () => {
           </div>
         </a>
 
-        <a href="https://github.com/iamabdurahmon" className="card" target="_blank">
+        <a
+          href="https://github.com/iamabdurahmon"
+          className="card"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>
             <FaGithub />
           </span>
@@ -122,7 +157,12 @@ const Landing = () => {
           </div>
         </a>
 
-        <a href="https://t.me/iamabdurahmon" className="card" target="_blank">
+        <a
+          href="https://t.me/iamabdurahmon"
+          className="card"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>
             <RiTelegram2Line />
           </span>
@@ -144,12 +184,36 @@ const Landing = () => {
           <h1>Drop a line</h1>
         </div>
         <div className="inp">
-          <input type="text" placeholder="Your name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
-          <input type="email" placeholder="Your email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
         </div>
-        <textarea placeholder="Leave a message..." required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
+        <textarea
+          name="message"
+          placeholder="Leave a message..."
+          required
+          value={formData.message}
+          onChange={handleChange}
+        ></textarea>
 
-        <button type="submit" className={`btn ${status}`} disabled={status !== "idle"}>
+        <button
+          type="submit"
+          className={`btn ${status}`}
+          disabled={status !== "idle"}
+        >
           {status === "idle" && "Send message"}
           {status === "loading" && <BiLoaderAlt className="spinner" />}
           {status === "success" && "Message sent"}
@@ -157,7 +221,12 @@ const Landing = () => {
         </button>
       </form>
 
-      <a href="https://maps.app.goo.gl/14bEDJ9yxL5v9Keq7" className="card" target="_blank">
+      <a
+        href="https://maps.app.goo.gl/14bEDJ9yxL5v9Keq7"
+        className="card"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>
           <IoLocationOutline />
         </span>
@@ -171,7 +240,11 @@ const Landing = () => {
       <footer>
         <p>
           Link In Bio • Made by{" "}
-          <a href="https://portfolio.rakhim0v.uz/" target="_blank">
+          <a
+            href="https://portfolio.rakhim0v.uz/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Rakhimov
           </a>
         </p>
