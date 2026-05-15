@@ -36,10 +36,24 @@ const Landing = () => {
       `<b>Email:</b> <code>${formData.email}</code>\n\n` +
       `<b>Message:</b> ${formData.message}` +
       `</blockquote>\n\n` +
-      `⏱ <u>${new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} • Automated Notification</u>`;
+      `⏱ <u>${new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} • Automated</u>\n\n` +
+      `#biolink`;
 
     const TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
     const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${formData.email}&su=${encodeURIComponent("Reply to " + formData.name)}`;
+
+    const replyMarkup = {
+      inline_keyboard: [
+        [
+          {
+            text: "Reply via Gmail",
+            url: gmailUrl,
+          },
+        ],
+      ],
+    };
 
     try {
       const response = await axios.post(
@@ -48,13 +62,13 @@ const Landing = () => {
           chat_id: CHAT_ID,
           text: text,
           parse_mode: "HTML",
+          reply_markup: replyMarkup,
         },
       );
 
       if (response.status === 200) {
         setTimeout(() => {
           setStatus("success");
-
           setTimeout(() => {
             setFormData({ name: "", email: "", message: "" });
             setStatus("idle");
@@ -64,7 +78,6 @@ const Landing = () => {
     } catch (error) {
       setTimeout(() => {
         setStatus("error");
-
         setTimeout(() => {
           setStatus("idle");
           setFormData({ name: "", email: "", message: "" });
@@ -80,14 +93,12 @@ const Landing = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
     >
-      {/* profile */}
       <div className="top-pic">
         <img src={logo} alt="logo" />
       </div>
       <h1 className=" titleMain">Rakhimov Dev.</h1>
       <p className=" textMain">Frontend Developer</p>
 
-      {/* achievements */}
       <div className="achievements">
         <div className="achiev-block">
           <LuLayers />
@@ -103,7 +114,6 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* image */}
       <div className="blog">
         <div className="blog-image">
           <img src={blogImg} alt="image" />
@@ -114,7 +124,6 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* card links */}
       <div className="card-links">
         <a
           href="https://portfolio.rakhim0v.uz/"
@@ -175,7 +184,6 @@ const Landing = () => {
 
       <div className="line"></div>
 
-      {/* contact form */}
       <form onSubmit={handleSubmit}>
         <div className="form-top">
           <span>
@@ -236,7 +244,6 @@ const Landing = () => {
         </div>
       </a>
 
-      {/* footer */}
       <footer>
         <p>
           Link In Bio • Made by{" "}
