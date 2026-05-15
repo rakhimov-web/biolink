@@ -1,4 +1,5 @@
-/* root */
+/* Root*/
+
 :root {
   --main-bg: #141414;
   --border-clr: #212121;
@@ -7,6 +8,14 @@
   --hover: #242424;
   --white: #d1d1d1;
   --gray: #7d7d7d;
+  --line-bg: #4c4c4c;
+  --card-hover-border: #2e2e2e;
+  --ping-dot: #ff4b7d;
+  --btn-hover-bg: #303030;
+  --btn-error-bg: #3e1d22;
+  --btn-error-text: #ff2244;
+  --btn-success-bg: #1b3321;
+  --btn-success-text: #44ff88;
 }
 
 * {
