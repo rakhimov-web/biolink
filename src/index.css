@@ -1,0 +1,34 @@
+/* root */
+:root {
+  --main-bg: #141414;
+  --border-clr: #212121;
+  --block-border: #262626;
+  --card-bg: #1c1c1c;
+  --hover: #242424;
+  --white: #d1d1d1;
+  --gray: #7d7d7d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Satoshi", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html.lenis {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
