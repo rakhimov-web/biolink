@@ -1,3 +1,4 @@
+/* --- Global Wrapper Section --- */
 .wrapper {
   max-width: 480px;
   display: flex;
@@ -11,10 +12,9 @@
   border-radius: 1.6rem;
   text-align: center;
   z-index: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
+/* --- Profile Section --- */
 .top-pic img {
   width: 6rem;
   border-radius: 50%;
@@ -34,6 +34,7 @@
   font-weight: 500;
 }
 
+/* --- Achievements Section --- */
 .achievements {
   display: flex;
   align-items: center;
@@ -72,6 +73,7 @@
   color: var(--white);
 }
 
+/* --- Blog Section --- */
 .blog {
   position: relative;
   width: 100%;
@@ -123,6 +125,7 @@
   margin-top: 0.4rem;
 }
 
+/* line */
 .line {
   width: 6rem;
   height: 0.3rem;
@@ -131,6 +134,7 @@
   border-radius: 3rem;
 }
 
+/* --- Card link section --- */
 .card-links {
   width: 100%;
   display: flex;
@@ -227,6 +231,7 @@
   color: var(--gray);
 }
 
+/* --- Form section --- */
 form {
   width: 100%;
   display: flex;
@@ -330,6 +335,7 @@ textarea {
   background-color: var(--btn-hover-bg);
 }
 
+/* footer */
 footer {
   position: relative;
   top: 5.5rem;
@@ -350,6 +356,7 @@ footer p a {
   text-decoration: underline;
 }
 
+/* additional */
 .spinner {
   font-size: 2rem;
   animation: rotate 2s linear infinite;
@@ -378,6 +385,7 @@ footer p a {
   pointer-events: none;
 }
 
+/* MEDIA */
 @media (max-width: 480px) {
   .wrapper {
     width: 100%;
@@ -385,7 +393,6 @@ footer p a {
     margin-bottom: 0;
     border-radius: 0;
     border: none;
-    background-color: transparent;
   }
 
   footer {

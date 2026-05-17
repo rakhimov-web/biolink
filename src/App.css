@@ -16,14 +16,18 @@ body {
   color: #ffffff;
 }
 
-.animation {
-  pointer-events: none;
-}
+/* MEDIA */
+@media (max-width: 480px) {
+  .animation {
+    display: none;
+  }
+  body {
+    background-color: var(--main-bg);
+  }
 
-#tsparticles canvas {
-  will-change: transform;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+  html.lenis {
+    font-size: 9px;
+  }
 }
 
 html,
@@ -31,10 +35,4 @@ body {
   overscroll-behavior-y: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media (max-width: 480px) {
-  html.lenis {
-    font-size: 9px;
-  }
 }

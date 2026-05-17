@@ -2,13 +2,8 @@ import { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-const isTouchDevice = () =>
-  typeof window !== "undefined" &&
-  (navigator.maxTouchPoints > 0 || "ontouchstart" in window);
-
 const ParticleBackground = () => {
   const [init, setInit] = useState(false);
-  const isTouch = isTouchDevice();
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -37,6 +32,7 @@ const ParticleBackground = () => {
           value: 2,
           random: true,
         },
+
         links: {
           enable: true,
           distance: 150,
@@ -54,11 +50,11 @@ const ParticleBackground = () => {
       interactivity: {
         events: {
           onHover: {
-            enable: !isTouch,
+            enable: true,
             mode: "repulse",
           },
           onClick: {
-            enable: !isTouch,
+            enable: true,
             mode: "push",
           },
         },
@@ -69,7 +65,7 @@ const ParticleBackground = () => {
       },
       retina_detect: true,
     }),
-    [isTouch],``
+    [],
   );
 
   if (init) {
