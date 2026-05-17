@@ -126,7 +126,7 @@ const Landing = () => {
 
       <div className="card-links">
         <a
-          href="https://portfolio.rakhim0v.uz/"
+          href="https://portfolio.rakhim.uz/"
           className="card"
           target="_blank"
           rel="noreferrer"
