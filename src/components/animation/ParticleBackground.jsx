@@ -20,7 +20,7 @@ const ParticleBackground = () => {
       particles: {
         number: {
           value: 100,
-          density: { enable: true, area: 750 },
+          density: { enable: true, argitea: 750 },
         },
         color: { value: "#7d7d7d" },
         shape: { type: "circle" },
