@@ -248,7 +248,7 @@ const Landing = () => {
         <p>
           Link In Bio • Made by{" "}
           <a
-            href="https://portfolio.rakhim0v.uz/"
+            href="https://portfolio.rakhim.uz/"
             target="_blank"
             rel="noreferrer"
           >
