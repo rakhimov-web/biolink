@@ -1,18 +1,9 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    path {
-      fill: #242424;
-    }
-    @media (prefers-color-scheme: dark) {
-      path {
-        fill: #EDEDED;
-      }
-    }
-  </style>
-  <path d="M126.669 56.7822H178V90.5643H126.669V56.7822Z"/>
-  <path d="M23 90.5645H126.669V124.347H23V90.5645Z"/>
-  <path d="M23 23H126.669V56.7821H23V23Z"/>
-  <path d="M126.669 124.347H178V178H126.669V124.347Z"/>
-  <path d="M23 124.347H74.3312V178H23V124.347Z"/>
-  <path d="M23 56.7822H74.3312V90.5643H23V56.7822Z"/>
+<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="350" height="350" rx="175" fill="#242424"/>
+<rect x="200.669" y="130.782" width="51.3312" height="33.7821" fill="#EDEDED"/>
+<rect x="97" y="164.564" width="103.669" height="33.7821" fill="#EDEDED"/>
+<rect x="97" y="97" width="103.669" height="33.7821" fill="#EDEDED"/>
+<rect x="200.669" y="198.347" width="51.3312" height="53.6538" fill="#EDEDED"/>
+<rect x="97" y="198.347" width="51.3312" height="53.6538" fill="#EDEDED"/>
+<rect x="97" y="130.782" width="51.3312" height="33.7821" fill="#EDEDED"/>
 </svg>
