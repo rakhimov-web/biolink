@@ -19,7 +19,7 @@ const ParticleBackground = () => {
       },
       particles: {
         number: {
-          value: 100,
+          value: 120,
           density: { enable: true, argitea: 750 },
         },
         color: { value: "#7d7d7d" },
@@ -42,7 +42,7 @@ const ParticleBackground = () => {
         },
         move: {
           enable: true,
-          speed: 4,
+          speed: 3,
           direction: "none",
           outModes: { default: "out" },
         },
