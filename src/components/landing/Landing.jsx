@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import "./landing.css";
 import logo from "../../assets/logo.svg";
-import blogImg from "../../assets/blog.webp";
+import blogImg from "../../assets/blog.png";
 import { LuLayers, LuCodeXml, LuUsersRound } from "react-icons/lu";
 import { TbLink } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
