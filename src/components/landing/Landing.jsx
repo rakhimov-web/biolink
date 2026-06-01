@@ -152,7 +152,7 @@ const Landing = () => {
         </a>
 
         <a
-          href="https://github.com/iamabdurahmon"
+          href="https://github.com/rakhimov-web"
           className="card"
           target="_blank"
           rel="noreferrer"
