@@ -31,8 +31,7 @@
 .textMain {
   font-size: 1.6rem;
   color: var(--gray);
-  font-weight: 400;
-}
+font-weight: 500;}
 
 /* --- Achievements Section --- */
 .achievements {
@@ -65,8 +64,7 @@
 .achiev-block span {
   font-size: 1.4rem;
   color: var(--white);
-  font-weight: 400;
-}
+font-weight: 500;}
 
 .achiev-block svg {
   font-size: 1.6rem;
@@ -120,8 +118,7 @@
 
 .blog-text {
   font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--white);
+font-weight: 500;  color: var(--white);
   margin-top: 0.4rem;
 }
 
@@ -227,8 +224,7 @@
 
 .card-desc p {
   font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--gray);
+font-weight: 500;  color: var(--gray);
 }
 
 /* --- Form section --- */
@@ -291,8 +287,7 @@ textarea {
   outline: none;
   padding: 1.2rem;
   color: var(--white);
-  font-weight: 400;
-  font-size: 1.6rem;
+font-weight: 500;  font-size: 1.6rem;
   border-radius: 0.8rem;
   -webkit-user-select: text;
   user-select: text;
@@ -317,8 +312,7 @@ textarea {
 
 .btn {
   font-size: 1.6rem;
-  font-weight: 400;
-  margin-top: 1.5rem;
+font-weight: 500;  margin-top: 1.5rem;
   padding: 1.2rem;
   border-radius: 0.8rem;
   background-color: var(--hover);
@@ -343,8 +337,7 @@ footer {
 
 footer p {
   font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--gray);
+font-weight: 500;  color: var(--gray);
   padding: 0.5rem 1rem;
   background-color: var(--main-bg);
   border: 0.5px solid var(--border-clr);

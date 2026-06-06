@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap");
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600&display=swap');
 
 /* Root*/
 
@@ -26,7 +26,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Geist", sans-serif;
+  font-family: "Satoshi", sans-serif;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
