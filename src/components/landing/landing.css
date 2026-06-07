@@ -23,8 +23,7 @@
 
 .titleMain {
   font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--white);
+font-weight: 500;  color: var(--white);
   margin-top: 1rem;
 }
 
@@ -111,8 +110,7 @@ font-weight: 500;}
 
 .blog-title {
   font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--white);
+font-weight: 500;  color: var(--white);
   margin: 0;
 }
 
@@ -218,8 +216,7 @@ font-weight: 500;  color: var(--white);
 
 .card-desc h1 {
   font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--white);
+font-weight: 500;  color: var(--white);
 }
 
 .card-desc p {
@@ -266,8 +263,7 @@ form {
 
 .form-top h1 {
   font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--white);
+font-weight: 500;  color: var(--white);
 }
 
 .inp {
